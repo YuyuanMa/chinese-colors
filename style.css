@@ -1,0 +1,106 @@
+:root {
+  /* 中国传统色 —— palette */
+  --c-zhusha: #FF461F;   /* 朱砂 */
+  --c-yanzhi: #9D2933;   /* 胭脂 */
+  --c-yinzhu: #E34D59;   /* 银朱 */
+  --c-zaohong: #7C1823;  /* 枣红 */
+  --c-ehuang: #FFF143;   /* 鹅黄 */
+  --c-tenghuang: #FFBF37;/* 藤黄 */
+  --c-qiuxiang: #D9B611; /* 秋香 */
+  --c-zhuqing: #789262;  /* 竹青 */
+  --c-shilv: #57C3C2;    /* 石绿 */
+  --c-doulv: #A7C080;    /* 豆绿 */
+  --c-dailan: #4A4266;   /* 黛蓝 */
+  --c-yuebai: #D6ECF0;   /* 月白 */
+  --c-tianqing: #B0D8E0; /* 天青 */
+  --c-dianqing: #177CB0; /* 靛青 */
+  --c-ouhe: #E4C6D0;     /* 藕荷 */
+  --c-dingxiang: #CCA4E3;/* 丁香 */
+  --c-mose: #161823;     /* 墨色 */
+  --c-xuan: #3E3A39;     /* 玄 */
+  --c-su: #F5F2E9;       /* 素 / 宣纸 */
+
+  /* 角色 */
+  --ink: #161823;
+  --paper: #F5F2E9;
+  --accent: #FF461F;
+  --heading: #4A4266;
+  --muted: #6b6b72;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Songti SC", "SimSun", serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* 导航 */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+nav .brand {
+  font-weight: bold;
+  color: var(--paper);
+  text-decoration: none;
+}
+nav .links a {
+  color: var(--paper);
+  text-decoration: none;
+  margin-left: 1rem;
+  opacity: 0.85;
+}
+nav .links a:hover {
+  opacity: 1;
+  color: var(--c-ehuang);
+}
+
+/* 主内容 */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2, h3 { color: var(--heading); }
+
+/* 色板墙 */
+.wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+.swatch {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.swatch .chip { height: 96px; }
+.swatch .meta {
+  padding: 0.5rem 0.6rem;
+  background: #fff;
+}
+.swatch .name { font-weight: bold; }
+.swatch .pinyin { color: var(--muted); font-size: 0.85rem; }
+.swatch .hex {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
