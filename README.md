@@ -1,18 +1,18 @@
-# 中国传统色 · Chinese Traditional Colors
+# Chinese Traditional Colors
 
-一个介绍中国古代颜色命名的网站——月白、黛蓝、朱砂、竹青……每个颜色名字都是一段小诗、一段典故。
+A website about the named colours of classical China — yuebai (moon white), dailan (indigo-blue), zhusha (cinnabar), zhuqing (bamboo green) — where every colour name is a small piece of poetry and history.
 
-## 四个页面
-- `index.html` — 色板：所有颜色一眼看尽 + 项目介绍
-- `colors.html` — 色库：按色系分组，名字、拼音、色值
-- `story.html` — 故事：古人为什么这样给颜色起名
-- `about.html` — 关于：这个网站给谁看、资料来源
+## The four pages
+- `index.html` — the colour wall: every colour at a glance, plus an introduction
+- `colors.html` — the colour library, grouped by hue, with name, pinyin and hex
+- `story.html` — the stories: how and why ancient China named its colours
+- `about.html` — who this is for, and the sources
 
-## 怎么跑
-用 VS Code 的 Live Server 打开（共享导航需要 http://，不能直接 file://）。
+## Run it
+Open with VS Code's Live Server (the shared navigation needs http://, not file://).
 
 ## Git
-每天做一点，让历史显示这个网站是一步步长出来的。
+Do a little every day, so the history shows the site growing.
 
-## 资料来源
-颜色名与色值参考《中国传统色：故宫里的色彩美学》（郭浩、李健明 著）及公开色卡。
+## Sources
+Colour names and values follow _The Traditional Colours of the Forbidden City_ (Guo Hao & Li Jianming) and public colour charts.
