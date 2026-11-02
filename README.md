@@ -11,8 +11,5 @@ A website about the named colours of classical China — yuebai (moon white), da
 ## Run it
 Open with VS Code's Live Server (the shared navigation needs http://, not file://).
 
-## Git
-Do a little every day, so the history shows the site growing.
-
 ## Sources
 Colour names and values follow _The Traditional Colours of the Forbidden City_ (Guo Hao & Li Jianming) and public colour charts.
