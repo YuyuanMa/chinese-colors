@@ -43,7 +43,18 @@ function renderWall(el) {
   el.innerHTML = COLORS.map(function (c) { return swatchHTML(c, false); }).join("");
 }
 
-// Library page: every colour, with its description.
+// Library page: group the colours by hue, one section per hue.
 function renderLibrary(el) {
-  el.innerHTML = COLORS.map(function (c) { return swatchHTML(c, true); }).join("");
+  var hues = ["Red", "Yellow", "Green", "Blue", "Purple", "Neutral"];
+  el.innerHTML = hues.map(function (hue) {
+    var group = COLORS.filter(function (c) { return c.hue === hue; });
+    return (
+      '<section class="hue-group">' +
+      '<h2>' + hue + '</h2>' +
+      '<div class="wall">' +
+      group.map(function (c) { return swatchHTML(c, true); }).join("") +
+      '</div>' +
+      '</section>'
+    );
+  }).join("");
 }

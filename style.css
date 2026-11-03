@@ -78,6 +78,13 @@ h1, h2, h3 { color: var(--heading); }
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 0.75rem;
 }
+.hue-group {
+  margin-bottom: 2rem;
+}
+.hue-group h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.25rem;
+}
 .swatch {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 6px;
