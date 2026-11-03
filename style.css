@@ -95,6 +95,11 @@ h1, h2, h3 { color: var(--heading); }
   font-size: 0.8rem;
   color: var(--muted);
 }
+.swatch .note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
 
 /* 页脚 */
 footer {

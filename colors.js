@@ -22,18 +22,28 @@ const COLORS = [
   { name: "素", pinyin: "sù", hex: "#F5F2E9", note: "undyed, the white of raw silk and paper", hue: "Neutral" },
 ];
 
-// Render an array of colours as a wall of swatches into the given element.
+// Build the HTML for one colour card. `withNote` adds the English description.
+function swatchHTML(c, withNote) {
+  var note = withNote ? '<div class="note">' + c.note + '</div>' : '';
+  return (
+    '<div class="swatch">' +
+    '<div class="chip" style="background:' + c.hex + '"></div>' +
+    '<div class="meta">' +
+    '<div class="name">' + c.name + '</div>' +
+    '<div class="pinyin">' + c.pinyin + ' &middot; ' + c.hue + '</div>' +
+    '<div class="hex">' + c.hex + '</div>' +
+    note +
+    '</div>' +
+    '</div>'
+  );
+}
+
+// Homepage: a flat wall of every colour.
 function renderWall(el) {
-  el.innerHTML = COLORS.map(function (c) {
-    return (
-      '<div class="swatch">' +
-      '<div class="chip" style="background:' + c.hex + '"></div>' +
-      '<div class="meta">' +
-      '<div class="name">' + c.name + '</div>' +
-      '<div class="pinyin">' + c.pinyin + ' &middot; ' + c.hue + '</div>' +
-      '<div class="hex">' + c.hex + '</div>' +
-      '</div>' +
-      '</div>'
-    );
-  }).join("");
+  el.innerHTML = COLORS.map(function (c) { return swatchHTML(c, false); }).join("");
+}
+
+// Library page: every colour, with its description.
+function renderLibrary(el) {
+  el.innerHTML = COLORS.map(function (c) { return swatchHTML(c, true); }).join("");
 }
