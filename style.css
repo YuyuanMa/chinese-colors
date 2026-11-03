@@ -107,6 +107,21 @@ h1, h2, h3 { color: var(--heading); }
   color: var(--muted);
   margin-top: 0.25rem;
 }
+.swatch[data-hex] {
+  position: relative;
+  cursor: pointer;
+}
+.swatch.copied::after {
+  content: "Copied!";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
 
 /* 页脚 */
 footer {

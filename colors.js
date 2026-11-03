@@ -25,8 +25,9 @@ const COLORS = [
 // Build the HTML for one colour card. `withNote` adds the English description.
 function swatchHTML(c, withNote) {
   var note = withNote ? '<div class="note">' + c.note + '</div>' : '';
+  var copyAttr = withNote ? ' data-hex="' + c.hex + '" title="Click to copy"' : '';
   return (
-    '<div class="swatch">' +
+    '<div class="swatch"' + copyAttr + '>' +
     '<div class="chip" style="background:' + c.hex + '"></div>' +
     '<div class="meta">' +
     '<div class="name">' + c.name + '</div>' +
@@ -57,4 +58,33 @@ function renderLibrary(el) {
       '</section>'
     );
   }).join("");
+}
+
+// Copy a hex value to the clipboard, then flash a "Copied" state on the swatch.
+function copyHex(hex, swatchEl) {
+  function fallback() {
+    var ta = document.createElement("textarea");
+    ta.value = hex;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(hex).catch(fallback);
+  } else {
+    fallback();
+  }
+  swatchEl.classList.add("copied");
+  setTimeout(function () { swatchEl.classList.remove("copied"); }, 1200);
+}
+
+// Delegate one click handler over a container of swatches.
+function enableCopy(el) {
+  el.addEventListener("click", function (e) {
+    var swatch = e.target.closest(".swatch");
+    if (swatch) copyHex(swatch.getAttribute("data-hex"), swatch);
+  });
 }
