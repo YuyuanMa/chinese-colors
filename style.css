@@ -123,6 +123,40 @@ h1, h2, h3 { color: var(--heading); }
   border-radius: 4px;
 }
 
+/* 故事页 */
+.story {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+.story-swatch {
+  width: 96px;
+  height: 96px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.story-body h2 {
+  margin: 0 0 0.25rem;
+}
+.story .pinyin {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.story .hex {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.story p {
+  margin: 0;
+}
+
 /* 页脚 */
 footer {
   text-align: center;
