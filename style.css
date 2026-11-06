@@ -157,6 +157,15 @@ h1, h2, h3 { color: var(--heading); }
   margin: 0;
 }
 
+/* 关于页 */
+#sources li {
+  margin-bottom: 0.75rem;
+}
+#sources .note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* 页脚 */
 footer {
   text-align: center;
