@@ -1,6 +1,6 @@
 // Ten more colours, appended to the main palette.
 const EXTRA_COLORS = [
-  { name: "绯红", english: "Crimson", pinyin: "fēihóng", hex: "#D9322C", note: "a bright light red", symbolism: "绯 (fēi) is the colour of blushing — a light, bright red of shyness and spring. The word lives on in '绯闻', modern Chinese for gossip.", hue: "Red" },
+  { name: "绯红", english: "Crimson", pinyin: "fēihóng", hex: "#D9322C", note: "a bright light red", symbolism: "Fēi is the colour of blushing — a light, bright red of shyness and spring. The word lives on in 'fēiwén', modern Chinese for gossip.", hue: "Red" },
   { name: "茜色", english: "Madder", pinyin: "qiànsè", hex: "#B22C46", note: "a red dyed from the madder root", symbolism: "Madder is a dye plant whose root gives a soft, deep red. It was one of the oldest plant dyes in China — the red of ordinary cloth.", hue: "Red" },
   { name: "缃色", english: "Pale Silk", pinyin: "xiāngsè", hex: "#F0C239", note: "the pale yellow of a book's silk wrapper", symbolism: "The pale yellow of a book's silk wrapper — quiet, scholarly, the colour of old paper and gentle learning.", hue: "Yellow" },
   { name: "琥珀", english: "Amber", pinyin: "hǔpò", hex: "#CA6924", note: "the golden brown of fossil resin", symbolism: "Fossil resin, golden and warm. Amber was prized as a jewel; its colour meant warmth, age, and preserved light.", hue: "Yellow" },

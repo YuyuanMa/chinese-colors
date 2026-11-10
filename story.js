@@ -6,11 +6,11 @@ const STORIES = [
   },
   {
     name: "黛蓝", pinyin: "dàilán", hex: "#4A4266",
-    story: "黛 (dài) was the blue-black pigment used to paint eyebrows in ancient China — women ground the mineral and drew fine, dark brows, and the colour was named after the painted brow itself. It is a deep, calm blue-black, like distant hills at dusk. The phrase 眉黛 (eyebrow-黛) appears throughout classical poetry as an image of feminine beauty. Over time the word widened from a cosmetic to a colour in its own right, used for clothing, ink, and landscape painting."
+    story: "Dài, the blue-black pigment used to paint eyebrows in ancient China — women ground the mineral and drew fine, dark brows, and the colour was named after the painted brow itself. It is a deep, calm blue-black, like distant hills at dusk. The painted brow, méidài, appears throughout classical poetry as an image of feminine beauty. Over time the word widened from a cosmetic to a colour in its own right, used for clothing, ink, and landscape painting."
   },
   {
     name: "月白", pinyin: "yuèbái", hex: "#D6ECF0",
-    story: "Moon white is not pure white. It is the faint blue-tinged white of moonlight — a cool, soft light that falls on water, silk, and quiet courtyards. In classical poetry, 月白 describes the moon's glow, a light that is bright but never harsh. Because it is the colour of night rather than day, moon white carries a sense of stillness and distance. Silk dyed in this pale blue-white was worn for quiet, elegant occasions rather than festive ones."
+    story: "Moon white is not pure white. It is the faint blue-tinged white of moonlight — a cool, soft light that falls on water, silk, and quiet courtyards. In classical poetry, yuèbái (moon white) describes the moon's glow, a light that is bright but never harsh. Because it is the colour of night rather than day, moon white carries a sense of stillness and distance. Silk dyed in this pale blue-white was worn for quiet, elegant occasions rather than festive ones."
   },
   {
     name: "竹青", pinyin: "zhúqīng", hex: "#789262",
