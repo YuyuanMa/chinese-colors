@@ -25,9 +25,8 @@ const COLORS = [
 // Build the HTML for one colour card. `withNote` adds the English description.
 function swatchHTML(c, withNote) {
   var note = withNote ? '<div class="note">' + c.note + '</div>' : '';
-  var copyAttr = withNote ? ' data-hex="' + c.hex + '" title="Click to copy"' : '';
   return (
-    '<div class="swatch"' + copyAttr + '>' +
+    '<div class="swatch" data-hex="' + c.hex + '" title="Click to see details">' +
     '<div class="chip" style="background:' + c.hex + '"></div>' +
     '<div class="meta">' +
     '<div class="name">' + c.name + '</div>' +
