@@ -96,6 +96,7 @@ h1, h2, h3 { color: var(--heading); }
   background: #fff;
 }
 .swatch .name { font-weight: bold; }
+.swatch .english { font-style: italic; color: var(--heading); }
 .swatch .pinyin { color: var(--muted); font-size: 0.85rem; }
 .swatch .hex {
   font-family: ui-monospace, monospace;
