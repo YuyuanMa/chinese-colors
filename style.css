@@ -112,17 +112,6 @@ h1, h2, h3 { color: var(--heading); }
   position: relative;
   cursor: pointer;
 }
-.swatch.copied::after {
-  content: "Copied!";
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 0.75rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-}
 
 /* 故事页 */
 .story {
@@ -186,6 +175,63 @@ h1, h2, h3 { color: var(--heading); }
 #sources .note {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+/* 颜色详情弹窗 */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+.modal-backdrop.open {
+  display: flex;
+}
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 360px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modal-swatch {
+  height: 120px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal-english {
+  font-style: italic;
+  color: var(--heading);
+}
+.modal-pinyin,
+.modal-hex,
+.modal-rgb {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.modal-copy {
+  margin-top: 1rem;
+  padding: 0.5em 1.2em;
+  font: inherit;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
 }
 
 /* 页脚 */
