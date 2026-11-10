@@ -21,6 +21,7 @@ function buildModal() {
     '<div class="modal-hex" id="modal-hex"></div>' +
     '<div class="modal-rgb" id="modal-rgb"></div>' +
     '<p class="modal-note" id="modal-note"></p>' +
+    '<p class="modal-symbolism" id="modal-symbolism"></p>' +
     '<button type="button" class="modal-copy" id="modal-copy">Copy hex</button>' +
     '</div>';
   document.body.appendChild(backdrop);
@@ -55,6 +56,7 @@ function showDetail(hex) {
   document.getElementById("modal-hex").textContent = color.hex;
   document.getElementById("modal-rgb").textContent = hexToRgb(color.hex);
   document.getElementById("modal-note").textContent = color.note;
+  document.getElementById("modal-symbolism").textContent = color.symbolism;
   backdrop.classList.add("open");
 }
 

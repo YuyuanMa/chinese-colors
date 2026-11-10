@@ -220,6 +220,13 @@ h1, h2, h3 { color: var(--heading); }
   font-style: italic;
   color: var(--heading);
 }
+.modal-note {
+  font-style: italic;
+  color: var(--muted);
+}
+.modal-symbolism {
+  margin: 0.5rem 0 0;
+}
 .modal-pinyin,
 .modal-hex,
 .modal-rgb {
